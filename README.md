@@ -44,6 +44,6 @@ This will create a python environment named `bold-stratus`
 **Error**:
 - In case of error in the application, the answer will be "" (empty string) and the score will be -100. 
 
-
+For questions about this, please email prasannpandya1@gmail.com
 
 
