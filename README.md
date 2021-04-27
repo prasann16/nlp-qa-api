@@ -17,7 +17,7 @@ This will create a python environment named `bold-stratus`
 
 5. **Install required libraries using** `pip install -r requirements.txt`. **This will install all the required libraries for this project.**
 
-6. **Now you can run the server using:** `python app.py`.**
+6. **Now you can run the server using:** `python app.py`.
 
 8. **The API will run on `port 5000`**. 
 
