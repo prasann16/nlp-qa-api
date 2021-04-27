@@ -23,7 +23,7 @@ def answer():
 
         start_logits = output.start_logits[0].numpy()
         end_logits = output.end_logits[0].numpy()
-        
+
         answer_start = tf.argmax(output.start_logits, axis=1).numpy()[0]  # Get the most likely beginning of answer with the argmax of the score
         answer_end = (tf.argmax(output.end_logits, axis=1) + 1).numpy()[0]  # Get the most likely end of answer with the argmax of the score 
 
@@ -31,7 +31,8 @@ def answer():
 
         answer = tokenizer.convert_tokens_to_string(tokenizer.convert_ids_to_tokens(input_ids[answer_start:answer_end]))
     
-    except: 
+    except Exception as error: 
+        print(error)
         answer = ""
         score = -100
 
