@@ -19,7 +19,7 @@ This will create a python environment named `bold-stratus`
 
 6. **Now you can run the server using:** `python app.py`
 
-8. **Open your browser and go to `localhost:5000`. This is your local development server.**
+8. **The API will run on `port 5000`. 
 
 
 # File descriptions
