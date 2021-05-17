@@ -25,15 +25,18 @@ def process():
     final_result = {"answer":"","score":-100,"error":""}
     try:
         length = len(text)
-        text_list = []
         result_dict={}
         if length>450:
             no_of_segments = math.ceil(length/400)
             for i in range(no_of_segments):
                 segment = str(text[(i*400):(i*400)+450])
                 result = answer(query, segment)
+                # Add all the answers and score in a dict
                 result_dict[result['answer']] = result['score']
+
+            # Sorting the dict to get the answer with highest value
             result_dict = sorted(result_dict.items(),key=lambda item:item[1],reverse=True)
+            # Added answer with best score to final result dict
             final_result["answer"] = result_dict[0][0]
             final_result["score"] = result_dict[0][1]
         else:
