@@ -1,0 +1,12 @@
+.Python
+
+env/
+.vscode
+__pycache__
+.DS_Store
+.pyc
+
+node_modules/
+__frontend__/dist/
+src/.tmp/
+.DS_Store~9127a94a410b9c7c0f75819515c3c62882925ef1
