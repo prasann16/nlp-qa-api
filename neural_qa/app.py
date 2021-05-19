@@ -5,6 +5,7 @@ import math
 from transformers import AutoTokenizer, TFAutoModelForQuestionAnswering
 
 # Loading the model
+print("Loading the model..........")
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-cased-distilled-squad")
 model = TFAutoModelForQuestionAnswering.from_pretrained("distilbert-base-cased-distilled-squad", return_dict=True)
 
