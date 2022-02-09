@@ -1,5 +1,4 @@
-# APIs for questions answering
-NLP APIs for QA
+# NLP APIs for QA
 
 This project uses `Python based Flask framework` for the API
 
