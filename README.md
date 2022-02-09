@@ -1,5 +1,5 @@
 # bold-stratus-nlp
-NLP APIs for Bold Stratus
+NLP APIs for QA
 
 This project uses `Python based Flask framework` for the API
 
